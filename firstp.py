@@ -5,9 +5,12 @@ def main(x, y, filename):
 
     i = 0
     while i < x * y:
-        f.write('{} '.format(int(float(i / (x*y)) * 255)))
+        r = 0
+        g = 0
+        b = 0
+        f.write('0 ')#.format(int(float(i / (x*y)) * 255)))
         f.write('0 ')
-        f.write('0 ')#.format(255 - int(float(i / (x*y)) * 255)))
+        f.write('{} '.format(255 - int(float(i) / float(x*y)) * 255))
         i += 1
 
     f.close()
