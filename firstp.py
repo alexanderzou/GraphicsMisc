@@ -15,4 +15,4 @@ def main(x, y, filename):
 
     f.close()
 
-main(500, 500, 'pic.ppm')
+main(500, 5, 'pic.ppm')
